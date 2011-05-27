@@ -1,3 +1,3 @@
 module ShowSha
-  require 'show_sha/engine' if defined?(Rails)
+  class Engine < Rails::Engine ; end
 end
