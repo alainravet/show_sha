@@ -7,4 +7,5 @@ in Gemfile :
 
 Results :
 
-![](doc/sha-example.png)
+![](https://github.com/alainravet/show_sha/raw/master/doc/sha-example.png)
+
