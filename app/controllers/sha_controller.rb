@@ -1,5 +1,4 @@
 class ShaController < ApplicationController
-  layout false
 
   respond_to :html, :xml, :json
 
