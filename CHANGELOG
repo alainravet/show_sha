@@ -1,0 +1,8 @@
+
+version 0.0.2
+    - /sha returns a hash instead of a string {:sha => '0987654321'}
+    - /sha.json and /sha.xml return the hashed value in the proper format
+
+version 0.0.1
+    - /sha returns the sha as a string
+    - also work on app deployed at heroku.com

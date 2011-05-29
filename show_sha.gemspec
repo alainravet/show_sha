@@ -5,7 +5,7 @@ $:.push File.expand_path("../lib", __FILE__)
 Gem::Specification.new do |s|
 
   s.name        = 'show_sha'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = Time.now.utc.strftime("%Y-%m-%d")
   s.homepage    = "https://github.com/alainravet/show_sha"
 
