@@ -1,6 +1,20 @@
 class ShaController < ApplicationController
   layout false
+
+  respond_to :html, :xml, :json
+
   def index
-    @sha = ENV["COMMIT_HASH"] || `git rev-parse HEAD`
+    sha   =   heroku_SHA || local_SHA
+    @info =   {:sha => sha[0,10]}
+    respond_with @info
+  end
+
+private
+  def heroku_SHA
+    ENV["COMMIT_HASH"]
+  end
+
+  def local_SHA
+    `git rev-parse HEAD`
   end
 end
